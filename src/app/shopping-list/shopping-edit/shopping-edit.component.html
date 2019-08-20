@@ -5,18 +5,18 @@
             <div class="col-10">
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" class="form-control">
+                <input type="text" name="name" id="name" class="form-control" #nameInput>
               </div>
             </div>
             <div class="col-2">
               <div class="form-group">
                 <label for="name">Amount</label>
-                <input type="number" name="amount" id="amount" class="form-control">
+                <input type="number" name="amount" id="amount" class="form-control" #amountInput>
               </div>
             </div>
           </div>
           <div class="btn-group">
-            <button type="submit" class="btn btn-success">Add</button>
+            <button type="button" class="btn btn-success" (click)="onAddItem()">Add</button>
             <button type="button" class="btn btn-danger">Delete</button>
             <button type="button" class="btn btn-primary">Clear</button>
           </div>
