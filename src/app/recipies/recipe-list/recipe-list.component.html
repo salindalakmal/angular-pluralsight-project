@@ -1,4 +1,4 @@
 <button class="btn btn-primary">New Recipe</button>
 <ul class="list-unstyled">
-  <app-recipe-item *ngFor="let recipeEle of recipies" [recipe]="recipeEle" (recipeSelected)="onRecipeSelected(recipeEle)"></app-recipe-item>
+  <app-recipe-item *ngFor="let recipeEle of recipies" [recipe]="recipeEle"></app-recipe-item>
 </ul>
